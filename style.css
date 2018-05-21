@@ -169,3 +169,16 @@ nav {
 	justify-content: center;
 	align-items: center;
 }
+
+.section__grid-container{
+	width: 100%;
+	display: grid;
+	border: 1px solid red;
+	height: 1152px;
+	grid-template-columns: 2fr 1fr;
+}
+.grid__item{
+	border: 1px solid black;
+	padding: 10px;
+	margin: 5px;
+}
