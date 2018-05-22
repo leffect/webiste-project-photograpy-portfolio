@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Photography portfolio to html</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Playfair+Display|Raleway&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
-
 </head>
 
 <body>
@@ -32,7 +32,7 @@
 				</p>
 			</div>
 			<div class="header__arrow-down">
-				<i class="fas fa-angle-double-down fa-2x"></i>
+				<i class="fas fa-angle-double-down fa-2x animated infinite bounce"></i>
 			</div>
 		</div>
 	</header>
@@ -61,29 +61,111 @@
 				<div class="line"></div>
 			</div>
 			<div class="section__grid-container">
-				<div class="grid__item1 grid__item">1</div>
-				<div class="grid__item2 grid__item">2</div>
-				<div class="grid__item3 grid__item">3</div>
-				<div class="grid__item4 grid__item">4</div>
-				<div class="grid__item5 grid__item">5</div>
-				<div class="grid__item6 grid__item">6</div>
+				<div class="grid__item1 grid__item">
+					<div class="item__element">
+						<div class="item__element--frame">
+							<h2 class="item__element--h2">NATURE</h2>
+							<p class="item__element--p">beautiful nature</p>
+						</div>
+					</div>
+				</div>
+				<div class="grid__item2 grid__item">
+					<div class="item__element">
+						<h2 class="item__element--h2">NATURE</h2>
+						<p class="item__element--p">beautiful nature</p>
+					</div>
+				</div>
+				<div class="grid__item3 grid__item">
+					<div class="item__element">
+						<h2 class="item__element--h2">NATURE</h2>
+						<p class="item__element--p">beautiful nature</p>
+					</div>
+				</div>
+				<div class="grid__item4 grid__item">
+					<div class="item__element">
+						<h2 class="item__element--h2">NATURE</h2>
+						<p class="item__element--p">beautiful nature</p>
+					</div>
+				</div>
+				<div class="grid__item5 grid__item">
+					<div class="item__element">
+						<h2 class="item__element--h2">NATURE</h2>
+						<p class="item__element--p">beautiful nature</p>
+					</div>
+				</div>
+				<div class="grid__item6 grid__item">
+					<div class="item__element">
+						<h2 class="item__element--h2">NATURE</h2>
+						<p class="item__element--p">beautiful nature</p>
+					</div>
+				</div>
+			</div>
+			<div class="section__btn">
+				<button class="btn btn-more">LOAD MORE</button>
 			</div>
 		</section>
-		<section>
+		<section class="section__slider-with-quotes">
+			<div class="section__header-custom">
+				<h1 class="header__h1-custom">See the world through my lens</h1>
+			</div>
+			<div class="line"></div>
 
 		</section>
-		<video src="">
-			
-		</video>
-		<section>
-
+		<section class="section__video">
 		</section>
-		<section>
+		<section class="section__social-media">
+			<div class="section__header section__header--social">
+				<h1>FOLLOW ME</h1>
+			</div>
+			<div class="line"></div>
+			<div class="social-media-buttons fa-2x">
+				<div class="circle">
+					<i class="fab fa-pinterest-p"></i>
+				</div>
+				<div class="circle">
+					<i class="fab fa-instagram"></i>
+				</div>
+				<div class="circle">
+					<i class="fab fa-twitter"></i>
+				</div>
+				<div class="circle">
+					<i class="fab fa-google-plus-g"></i>
+				</div>
+				<div class="circle">
+					<i class="fab fa-tumblr"></i>
+				</div>
+			</div>
+		</section>
+		<section class="section-with-form">
+			<div class="section__header-contact">
+				<h1>contact me</h1>
+			</div>
+			<div class="line">
 
+			</div>
+			<p class="section__paragraph paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+			<form action="" class="section__form">
+				<input type="text" class="section__form--input form__input1" required placeholder="Your Name*">
+				<input type="text" class="section__form--input  form__input1" required placeholder="Your E-mail address">
+				<textarea name="" id="" cols="10" rows="7" class="section__form--input  form__input2" required placeholder="Your Message"></textarea>
+				<div class="form__description">
+					<p class="form__paragraph paragraph">All fields with an asterisk (*) are required</p>
+					<input type="submit" class="btn" value="SEND">
+				</div>
+			</form>
 		</section>
 	</main>
 	<footer>
-
+		<i class="fas fa-angle-up fa-2x"></i>
+		<h2 class="footer__h2">
+			MariaAnna
+		</h2> <br>
+		<h3 class="footer__h3">
+			Photography
+		</h3>
+		<p class="footer__paragraph">&copy; Copyring 2014</p>
 	</footer>
+	<script src="script.js"></script>
 </body>
+
 </html>
