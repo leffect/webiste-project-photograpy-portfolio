@@ -177,7 +177,7 @@ nav {
 .section__grid-container {
 	width: 100%;
 	display: grid;
-	height: 1152px;
+	height: 1163px;
 	grid-template-columns: 1fr 1fr 1fr;
 	padding: 0px;
 	grid-gap: 25px;
@@ -223,8 +223,7 @@ nav {
 	display: flex;
 	justify-content: center;
 }
-
-	
+/* frames*/	
 
 .item__element--h2{
 	font-family: 'Playfair Display', serif;
@@ -250,7 +249,7 @@ nav {
 	border: 1px solid white;
 	display: block;
 	margin: 10px 0px;
-	width: 80%;
+	width: 65%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -262,23 +261,86 @@ nav {
 	align-items: center;
 	height: 100%;
 }
-.item__element--frame{
-	text-align: center;
+
+.item__frame {
+	position: relative;
 	width: 205px;
 	height: 85px;
-	border: 2px solid white;
+	text-align: center;
+}
+.item__frame:before {
 	display: block;
-	box-sizing: border-box;
-	position: relative;
+	content: "";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+}
+.item__frame:after {
+	display: block;
+	content: "";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	border-top: 2px solid white;
+	border-right: 2px solid white;
+}
+.item__frame-second:before {
+	display: block;
+	content: "";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	border-bottom: 2px solid white;
+	border-left: 2px solid white;
+}
+.item__frame-second:after {
+	display: block;
+	content: "";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	border-bottom: 2px solid white;
+	border-right: 2px solid white;
 }
 
-.item__element--frame::before{
-	content: '';
-	height: 2px;
-	background-color: black;
-	position: absolute;
-	width: 150px;
+.frame-width:before{
+	margin: 0px -20px;
 }
+.frame-width:after{
+	margin: 0px -20px;
+}
+.frame-width-nd:before{
+	margin: 0px -20px;
+}
+.frame-width-nd:after{
+	margin: 0px -20px;
+}
+
+.frame-width-height:before{
+	margin: -70px -70px;
+}
+.frame-width-height:after{
+	margin: -70px -70px;
+}
+.frame-width-height-nd:before{
+	margin: -70px -70px;
+}
+.frame-width-height-nd:after{
+	margin: -70px -70px;
+}
+
+
+
 /*video*/
 
 .section__video {
