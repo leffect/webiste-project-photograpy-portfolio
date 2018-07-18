@@ -9,20 +9,19 @@ document.addEventListener("DOMContentLoaded", () => {
 	arrow_to_beginnig.addEventListener("click", () => {
 		goal_beginning.scrollIntoView();
 	})
-})
 
 
-var forEach = function (t, o, r) {
-	if ("[object Object]" === Object.prototype.toString.call(t))
-		for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
-	else
-		for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t)
-};
-var hamburgers = document.querySelectorAll(".hamburger");
-if (hamburgers.length > 0) {
-	forEach(hamburgers, function (hamburger) {
-		hamburger.addEventListener("click", function () {
-			this.classList.toggle("is-active");
-		}, false);
+	let navbar_list = document.getElementById('navbar--list');
+	let navbarToggle = document.getElementById('navbar--toggle');
+
+	navbarToggle.addEventListener('click', function () {
+		if (this.classList.contains('active')) {
+			navbar_list.style.display = "none";
+			this.classList.remove('active');
+		} else {
+			navbar_list.style.display = "flex";
+			this.classList.add('active');
+
+		}
 	});
-}
+})
